@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 12px;
+}
+
+#faq {
+  background-image: linear-gradient(180deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  padding: 10rem 0;
+}
+
+.faq-card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 536px;
+  width: 315px;
+}
+
+.faq-image {
+  background: url("../images/bg-pattern-mobile.svg") no-repeat center top;
+}
+
+.faq-image .📦 {
+  display: none;
+}
+
+.faq-image .mobile-illustration {
+  position: relative;
+  top: -6.725rem;
+  left: 10px;
+}
+
+.faq-contents {
+  margin-top: -4rem;
+  padding: 0 1.5rem 2.5rem;
+}
+
+.faq-contents .secondary-header {
+  color: hsl(238, 29%, 16%);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.accordion {
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+.accordion .tab {
+  background-color: transparent;
+  border: none;
+  color: hsl(237, 12%, 33%);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.accordion .tab:hover {
+  color: hsl(14, 88%, 65%);
+  transition: 0.3s ease;
+}
+
+.accordion .tab:focus {
+  outline: none;
+}
+
+.accordion .active-tab {
+  color: hsl(238, 29%, 16%);
+}
+
+.accordion .arrow-image {
+  transition: 0.3s ease;
+}
+
+.accordion .active-arrow-image {
+  transform: rotate(180deg);
+}
+
+.accordion .tab-content {
+  color: hsl(240, 6%, 50%);
+  line-height: 1.5;
+  padding-bottom: 1rem;
+  padding-right: 2rem;
+}
+
+.accordion .hide-tab-content {
+  display: none;
+}
+
+@media only screen and (min-width: 992px) {
+  #faq {
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .faq-card {
+    display: flex;
+    min-height: 500px;
+    position: relative;
+    width: 900px;
+  }
+
+  .faq-image {
+    background: url("../images/bg-pattern-desktop.svg") no-repeat -36rem -18rem, url("../images/illustration-woman-online-desktop.svg") no-repeat -5rem center;
+    flex: 1.36;
+  }
+
+  .faq-image .📦 {
+    display: block;
+    position: absolute;
+    top: 40.5%;
+    left: -10.5%;
+  }
+
+  .faq-image .mobile-illustration {
+    display: none;
+  }
+
+  .faq-contents {
+    flex: 1;
+    margin: 0;
+    padding: 4.5rem 6.5rem 3rem 0;
+  }
+
+  .faq-contents .secondary-header {
+    text-align: left;
+  }
+
+  .faq-contents .tab {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Ping coming soon page</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome 5.15.3 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Custom Style Sheets -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <section id="coming-soon">
+      <div class="success-notification">
+        <i class="far fa-check-circle"></i>
+        <div class="text">
+          <h5>Thank You!</h5>
+          <p>Please check your email.</p>
+        </div>
+      </div>
+      <div class="logo">
+        <img src="./images/logo.svg" alt="Logo" />
+      </div>
+      <main>
+        <div class="header-text">
+          <h2 class="coming-soon-heading">
+            <span>We are launching </span>soon!
+          </h2>
+          <p class="coming-soon-content">Subscribe and get notified</p>
+        </div>
+
+        <div class="action-buttons">
+          <form name="newletter" action="/index.html" method="POST">
+            <div class="email-group">
+              <input
+                type="email"
+                name="emailAddress"
+                id="email"
+                placeholder="Your email address..."
+              />
+              <p class="validation-text">
+                Please provide a valid email address
+              </p>
+            </div>
+            <button type="submit" id="submitBtn">Notify Me</button>
+          </form>
+        </div>
+
+        <div class="header-image">
+          <img
+            src="./images/illustration-dashboard.png"
+            alt="Dashboard illustration"
+          />
+        </div>
+      </main>
+
+      <footer>
+        <div class="social-icons">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+        <p class="footer-text">&copy; Copyright Ping. All rights reserved.</p>
+      </footer>
+    </section>
+
+    <!-- Custom JS -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>

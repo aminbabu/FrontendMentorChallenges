@@ -1,0 +1,126 @@
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+  --white: hsl(0, 0%, 100%);
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.4rem;
+  color: var(--dark-grayish-blue);
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: var(--very-dark-desaturated-blue);
+}
+
+.container {
+  background-color: var(--dark-cyan, hsl(185, 75%, 39%));
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-position: 120% 140%, -15% -80%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 1rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 88%;
+}
+
+.bg-image {
+  background-image: url("../images/bg-pattern-card.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1rem 1rem 0 0;
+  height: 14rem; position: relative;
+}
+
+.bg-image img {
+  border: 0.7rem solid var(--white);
+  border-radius: 50%;
+  position: absolute;
+  left: calc(50% - 5.3rem);
+  top: calc(100% - 5.3rem);
+  width: 10.6rem;
+}
+
+.heading {
+  padding-top: 7rem;
+  padding-bottom: 2.8rem;
+}
+
+.heading h2 {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.heading span {
+  font-size: 1.8rem;
+}
+
+.heading p {
+  margin-top: 1rem;
+}
+
+.stats {
+  border-top: 0.1rem solid var(--dark-gray);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2.8rem;
+}
+
+.stat span {
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+}
+
+
+@media only screen and (min-width: 378px) {
+  .card {
+    width: 35rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    background-position: 256% 140%, -128% -72%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    background-position: -48rem -51rem, 37rem 30rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    background-position: -28rem -51rem, 65rem 33rem;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .container {
+    background-size: cover;
+    background-position: -111rem -160rem, 86rem 48rem;
+  }
+}

@@ -1,0 +1,200 @@
+:root {
+    /*Primary Colors*/
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+    --white: hsl(0, 0%, 100%);
+    /*Font Utilities*/
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6rem;
+}
+
+header {
+    background-color: var(--violet);
+    background-image: url("../images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+}
+
+.container {
+    margin: auto;
+    width: 82%;
+}
+
+nav {
+    padding: 2.6rem 0;
+}
+
+.logo img {
+    width: 12rem;
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    padding: 3.5rem 0;
+}
+
+.inner .hero-img {
+    flex-basis: 100%;
+    margin-bottom: 5rem;
+}
+
+.inner .hero-img img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.inner .hero-content {
+    color: var(--white);
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.inner .hero-content h2 {
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 2rem;
+}
+
+.inner .hero-content p {
+    line-height: 1.5;
+    margin-bottom: 3rem;
+}
+
+.inner .hero-content a {
+    display: inline-block;
+    background-color: var(--white);
+    border-radius: 5rem;
+    box-shadow: 0 0.6rem 1.6rem 0 rgba(0, 0, 0, 0.2),
+        0 0.3rem 0.8rem 0 rgba(0, 0, 0, 0.1);
+    color: var(--violet);
+    font-size: 1.3rem;
+    padding: 1rem 0;
+    text-align: center;
+    text-decoration: none;
+    width: 20rem;
+}
+
+.social-icons {
+    color: var(--white);
+    padding-bottom: 4rem;
+    text-align: center;
+}
+
+.social-icons .fab {
+    font-size: 2.6rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+        background-image: url("../images/bg-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 120%;
+        height: 100vh;
+    }
+
+    nav {
+        padding: 4.6rem 0;
+    }
+
+    .logo img {
+        width: 22rem;
+    }
+
+    .inner {
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .inner .hero-img {
+        flex-basis: 50%;
+        margin: 0;
+    }
+
+    .inner .hero-content {
+        flex-basis: 42%;
+        text-align: left;
+    }
+
+    .inner .hero-content h2 {
+        font-size: 2.6rem;
+    }
+
+    .inner .hero-content a {
+        margin-bottom: 3rem;
+        padding: 1.2rem 0;
+        transition: all 0.4s ease;
+        width: 16rem;
+    }
+
+    .inner .hero-content a:hover {
+        background-color: var(--soft-magenta);
+        color: var(--white);
+    }
+
+    .social-icons {
+        text-align: right;
+        transition: all 0.4s ease;
+    }
+
+    .social-icons .fab:hover {
+        color: var(--soft-magenta);
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .container {
+        width: 90%;
+    }
+
+    .inner {
+        align-items: flex-start;
+    }
+
+    .inner .hero-content {
+        padding-top: 3rem;
+    }
+
+    .inner .hero-content h2 {
+        font-size: 3rem;
+    }
+
+    .inner .hero-content a {
+        font-size: 1.6rem;
+        margin-bottom: 5rem;
+        padding: 1.5rem 0;
+        width: 18rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    header {
+        position: relative;
+    }
+
+    .inner .hero-content h2 {
+        font-size: 4.2rem;
+    }
+
+    .social-icons {
+        position: absolute;
+        right: 8rem;
+        bottom: 0;
+    }
+}

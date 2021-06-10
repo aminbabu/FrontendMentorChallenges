@@ -1,0 +1,201 @@
+:root {
+    /*Primary Colors*/
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 60%, 67%);
+    /*Neutral Color*/
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    /*Font Util.*/
+    font-size: 62.5%;
+    font-family: "Spartan", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.4rem;
+}
+
+p {
+    line-height: 1.7;
+}
+
+.container {
+    background-image: url("../images/bg-pattern-top-mobile.svg"),
+        url("../images/bg-pattern-bottom-mobile.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;
+    background-position: left top, right bottom;
+    margin: 0 auto;
+    width: 86%;
+}
+
+.content {
+    text-align: center;
+    padding: 7rem 0 4rem;
+}
+
+.content h1 {
+    color: var(--very-dark-magenta, hsl(300, 43%, 22%));
+    font-size: 3.2rem;
+    letter-spacing: -0.1rem;
+    line-height: 1;
+    margin-bottom: 3rem;
+}
+
+.content p {
+    color: var(--dark-grayish-magenta, hsl(303, 10%, 53%));
+    font-weight: 500;
+}
+
+.rattings-cards {
+    margin: 2rem 0;
+}
+
+.rattings .ratting-card {
+    background-color: var(--light-grayish-magenta, hsl(300, 24%, 96%));
+    border-radius: 0.8rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem 0;
+}
+
+.rattings .rattings-icon {
+    margin-bottom: 0.5rem;
+}
+
+.rattings .ratting-card p {
+    color: var(--very-dark-magenta, hsl(300, 43%, 22%));
+    font-weight: 700;
+}
+
+.user-cards {
+    font-size: 1.3rem;
+    margin: 5rem 0;
+}
+
+.user-cards .user-card {
+    border-radius: 0.8rem;
+    background-color: var(--very-dark-magenta, hsl(300, 43%, 22%));
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    padding: 4rem 3rem;
+}
+
+.user-cards .img-head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+.user-cards .img-head img {
+    border-radius: 50%;
+    margin-right: 2.5rem;
+    width: 3.8rem;
+}
+
+.user-cards .tag h4 {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.user-cards .tag span {
+    color: var(--soft-pink, hsl(333, 80%, 67%));
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
+        background-repeat: no-repeat, no-repeat;
+        background-size: 45%, 65%;
+        background-position: left top, right bottom;
+        padding-top: 7rem;
+    }
+
+    .top-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .content {
+        flex-basis: 38%;
+        padding: 0;
+        text-align: left;
+    }
+
+    .rattings {
+        flex-basis: 56%;
+    }
+
+    .rattings .ratting-card {
+        padding-left: 2.5rem;
+        flex-direction: row;
+    }
+
+    .rattings .rattings-icon {
+        margin: 0 2rem 0 0;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        height: 100vh;
+        display: grid;
+        place-items: center;
+    }
+
+    .container {
+        background-size: 30%, 80%;
+        padding-top: 8rem;
+        width: 80%;
+    }
+
+    .rattings {
+        flex-basis: 50%;
+        flex-shrink: 0;
+    }
+
+    .content h1 {
+        font-size: 4rem;
+        padding-right: 5rem;
+    }
+
+    .rattings .ratting-card {
+        padding-left: 3.2rem;
+        width: 46rem;
+    }
+
+    .rattings .ratting-card:nth-child(2) {
+        margin-left: 5rem;
+    }
+
+    .rattings .ratting-card:nth-child(3) {
+        margin-left: 10rem;
+    }
+
+    .user-cards {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .user-cards .user-card {
+        flex-basis: 32%;
+    }
+
+    .user-cards .user-card:nth-child(2) {
+        margin-top: 2rem;
+    }
+
+    .user-cards .user-card:nth-child(3) {
+        margin-top: 4rem;
+    }
+}

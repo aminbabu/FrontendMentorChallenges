@@ -1,0 +1,227 @@
+:root {
+  /* Primary Colors */
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  /* Accent Color */
+  --blue: hsl(248, 32%, 49%);
+  /* Neutral Colors */
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+  /* Text Colors */
+  --white: hsl(0, 0%, 100%);
+  /* Fonts Properties */
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+header {
+  background: var(--red) url("../images/bg-intro-mobile.png") left top;
+  background-size: contain;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.intro-component {
+  display: flex;
+  flex-direction: column;
+  padding: 7rem 0;
+  text-align: center;
+  width: 32rem;
+}
+
+.intro-content .intro-heading {
+  color: var(--white);
+  font: 2.6rem;
+  line-height: 1.2;
+  margin-bottom: 2.2rem;
+}
+
+.intro-content .intro-text {
+  color: var(--white);
+  line-height: 1.5;
+  margin-bottom: 6.2rem;
+}
+
+.trail-btn {
+  background-color: var(--blue);
+  border-radius: 0.8rem;
+  box-shadow: 0 0.8rem 0 rgba(0, 0, 0, 0.13);
+  color: var(--white);
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 2.4rem;
+  padding: 1.8rem 4.6rem;
+}
+
+.trail-btn span {
+  color: var(--grayish-blue);
+  font-weight: 400;
+}
+
+.form-controls {
+  background-color: var(--white);
+  border-radius: 0.8rem;
+  box-shadow: 0 0.8rem 0 rgba(0, 0, 0, 0.13);
+  padding: 2rem;
+}
+
+.form-controls .input-group {
+  position: relative;
+  min-height: 8.6rem;
+}
+
+.form-controls .input-group .error-icon {
+  position: absolute;
+  right: 5%;
+  top: 20%;
+  opacity: 0;
+  visibility: 0;
+}
+
+.form-controls .input-group .active-error-icon {
+  opacity: 1;
+  transition: 0.3s ease;
+  visibility: visible;
+}
+
+.form-controls .input-group .error-alert {
+  color: var(--red);
+  display: none;
+  font-size: 1.1rem;
+  font-style: italic;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  margin-right: 0.4rem;
+  text-align: right;
+}
+
+.form-controls .input-group .active-error-alert {
+  display: block;
+}
+
+.form-controls .input-feild {
+  border: 0.2rem solid #e6e7e8;
+  border-radius: 0.8rem;
+  color: var(--dark-blue);
+  caret-color: var(--blue);
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 1.8rem 2.6rem;
+  width: 100%;
+}
+
+.form-controls .wrong-input {
+  border-color: var(--red);
+}
+
+.form-controls input::placeholder {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.form-controls input:focus {
+  border-color: var(--grayish-blue);
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.form-controls input.wrong-input {
+  border-color: var(--red);
+}
+
+.form-controls .submit-button {
+  background-color: var(--green);
+  border: none;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.4rem 0 hsl(154, 59%, 46%);
+  color: var(--white);
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1.5rem;
+  padding: 1.9rem 0;
+  transition: 0.3s ease;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.form-controls .submit-button:hover {
+  background-color: hsl(154, 59%, 61%);
+}
+
+.form-controls .active-submit-button {
+  transform: translateY(0.4rem);
+  box-shadow: none;
+}
+
+.form-controls .form-text {
+  color: var(--grayish-blue);
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0 1.5rem;
+}
+
+.form-controls .form-text a {
+  text-decoration: none;
+  color: var(--red);
+}
+
+@media only screen and (min-width: 992px) {
+  .intro-component {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    width: 860px;
+  }
+
+  .intro-component .col-6 {
+    flex-basis: 46%;
+  }
+
+  .intro-content .intro-heading {
+    font-size: 3.6rem;
+  }
+
+  .trail-btn {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .form-controls .form-text {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  header {
+    background-image: url("../images/bg-intro-desktop.png");
+    background-size: 98%;
+  }
+
+  .intro-component {
+    width: 1120px;
+  }
+
+  .intro-component .col-6 {
+    flex-basis: 48%;
+  }
+
+  .intro-component .intro-heading {
+    font-size: 4.8rem;
+  }
+}

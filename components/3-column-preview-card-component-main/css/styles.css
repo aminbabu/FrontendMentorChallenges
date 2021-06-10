@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  background-color: hsl(0, 0%, 95%);
+}
+
+h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 4rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 95%);
+  margin: 2.5rem 0;
+  text-transform: uppercase;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.5;
+}
+
+button {
+  background-color: hsl(0, 0%, 95%);
+  font-family: 'Lexend Deca', sans-serif;
+  border: 2px solid transparent;
+  outline: none;
+  padding: 1.5rem 3.2rem;
+  border-radius: 2.5rem;
+  margin-top: 9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  border: 2px solid hsl(0, 0%, 95%);
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+}
+
+.sedans-button {
+  color: hsl(31, 77%, 52%);
+}
+
+.suvs-button {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury-button {
+  color: hsl(179, 100%, 13%);
+}
+
+.container {
+  width: 100%;
+}
+
+.cards {
+  border-radius: 1rem;
+  margin: 10rem auto;
+  width: 88%;
+}
+
+.card {
+  flex-basis: 33.32%;
+  flex: 1;
+  padding: 5rem 4rem;
+}
+
+.card:first-child {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 1rem 1rem 0 0;
+}
+
+.card:nth-child(2) {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card:last-child {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 0 1rem 1rem;
+}
+
+@media only screen and (min-width: 576px) {
+  .cards {
+    display: flex;
+    width: 88rem;
+    min-height: 48rem;
+  }
+
+  .card:first-child {
+    border-radius: 1rem 0 0 1rem;
+  }
+
+  .card:last-child {
+    border-radius: 0 1rem 1rem 0;
+  }
+}

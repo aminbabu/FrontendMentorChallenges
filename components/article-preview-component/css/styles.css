@@ -1,0 +1,210 @@
+:root {
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --desaturated-dark-blue: hsl(214, 17%, 51%);
+  --grayish-blue: hsl(212, 23%, 69%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+  --background-color: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+}
+
+#articles {
+  background-color: var(--light-grayish-blue);
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.article-review {
+  background-color: var(--background-color);
+  border-radius: 0.5rem;
+  box-shadow: 0px 0.5rem 1rem 0px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0px 0.5rem 1rem 0px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0px 0.5rem 1rem 0px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 315px;
+  position: relative;
+}
+
+.article-image {
+  border-radius: 0.5rem 0.5rem 0 0;
+  height: 13rem;
+  overflow: hidden;
+}
+
+.article-image img {
+  border-radius: 0.5rem 0.5rem 0 0;
+  object-fit: cover;
+  width: 100%;
+}
+
+.article {
+  padding: 2.5rem 1.8rem 0.9rem;
+}
+
+.article .card-heading {
+  color: var(--very-dark-grayish-blue);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.article .card-text {
+  color: var(--desaturated-dark-blue);
+  line-height: 1.5;
+  margin: 1rem 0 2rem;
+}
+
+.article .social-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.article .social-head .image-head {
+  display: flex;
+  align-items: center;
+}
+
+.article .social-head .image-head .profile {
+  width: 2.5rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.article .social-head .image-head .head-datails h4 {
+  color: var(--very-dark-grayish-blue);
+}
+
+.article .social-head .image-head .head-datails p {
+  color: var(--grayish-blue);
+}
+
+.article .share-btn {
+  background-color: var(--light-grayish-blue);
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+  height: 1.9rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  width: 1.9rem;
+  z-index: 1;
+}
+
+.article .share-btn .active-share-icon {
+  fill: var(--background-color);
+}
+
+.article .active-share-btn {
+  background-color: var(--desaturated-dark-blue);
+}
+
+.article .alert {
+  background-color: var(--very-dark-grayish-blue);
+  border-radius: 0 0 0.5rem 0.5rem;
+  padding: 1.5rem 1.8rem;
+  position: absolute;
+  left: 0;
+  bottom: -14%;
+  opacity: 0;
+  visibility: hidden;
+  /* transition: all 0.4s ease; */
+  width: 315px;
+}
+
+.article .mobile-alert-show {
+  bottom: 0;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.4s ease;
+}
+
+.article .alert .social-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.article .alert span {
+  color: var(--grayish-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.article .alert .icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.article .alert .icons .icon {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 992px) {
+  .article-review {
+    flex-direction: row;
+    min-width: 796px;
+  }
+
+  .article-image {
+    background: url("../images/drawers.jpg") no-repeat left center;
+    background-size: cover;
+    border-radius: 0.5rem 0 0 0.5rem;
+    flex-basis: 40%;
+    height: auto;
+  }
+
+  .article-image img {
+    display: none;
+  }
+
+  .article {
+    flex-basis: 60%;
+    padding: 2rem 3rem 2rem 2.5rem;
+  }
+
+  .article .card-heading {
+    font-size: 1.3rem;
+  }
+
+  .article .alert {
+    border-radius: 0.5rem;
+    padding: 1.2rem;
+    left: 76%;
+    top: 50%;
+    width: 260px;
+  }
+
+  .article .desktop-alert {
+    bottom: unset;
+  }
+
+  .article .alert .social-icons {
+    justify-content: center;
+    position: relative;
+  }
+
+  .article .social-icons::after {
+    background-color: var(--very-dark-grayish-blue);
+    content: "";
+    clip-path: polygon(100% 50%, 50% 100%, 0% 50%);
+    display: block;
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}

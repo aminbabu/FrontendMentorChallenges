@@ -1,0 +1,246 @@
+:root {
+  /* Colors */
+
+  /* Primary */
+  --blue: hsl(223, 87%, 63%);
+  /* Secondary */
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+  /* Neutral */
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
+}
+
+#coming-soon {
+  margin: 0 auto;
+  padding: 6rem 0 2rem;
+  text-align: center;
+  width: 310px;
+}
+
+.logo {
+  margin-bottom: 2.25rem;
+}
+
+.logo img {
+  width: 4.2rem;
+}
+
+.header-text .coming-soon-heading {
+  color: var(--very-dark-blue);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+.header-text .coming-soon-heading span {
+  color: var(--gray);
+  font-weight: 300;
+}
+
+.header-text .coming-soon-content {
+  color: var(--very-dark-blue);
+  font-weight: 300;
+  font-size: 0.875rem;
+  margin-bottom: 2.25rem;
+}
+
+form[name="newletter"] {
+  display: flex;
+  flex-direction: column;
+}
+
+.email-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.action-buttons input[type="email"] {
+  border: 1px solid var(--blue);
+  border-radius: 1.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.875rem 1.5rem;
+}
+
+.action-buttons input[type="email"].wrong-email-border {
+  border-color: var(--light-red);
+}
+
+.action-buttons input[type="email"]::placeholder {
+  color: var(--pale-blue);
+  font-size: 0.75rem;
+}
+
+.action-buttons input[type="email"]:focus {
+  outline: none;
+}
+
+.action-buttons .validation-text {
+  color: var(--light-red);
+  display: none;
+  font-size: 0.75rem;
+  font-style: italic;
+  margin-bottom: 0.25rem;
+}
+
+.action-buttons .wrong-email {
+  display: block;
+}
+
+.action-buttons button[type="submit"] {
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
+  border-radius: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 0.5rem;
+  padding: 0.875rem 0;
+  transition: 0.5s ease;
+}
+
+.action-buttons button[type="submit"]:hover {
+  box-shadow: 0.1rem 0.2rem 1rem hsl(223, 87%, 63%, 0.4);
+}
+
+.action-buttons button[type="submit"]:focus {
+  border-color: var(--very-dark-blue);
+  outline: none;
+}
+
+.header-image {
+  margin: 5rem 0;
+}
+
+.header-image img {
+  object-fit: cover;
+  width: 100%;
+}
+
+footer {
+  padding-top: 3rem;
+}
+
+footer .social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-bottom: 1.75rem;
+}
+
+footer .social-icons .fab {
+  border: 1px solid var(--pale-blue);
+  border-radius: 50%;
+  color: var(--blue);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  padding: 0.75rem;
+  height: 2rem;
+  width: 2rem;
+}
+
+footer .social-icons .fab:hover {
+  background-color: var(--blue);
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+footer .footer-text {
+  color: var(--gray);
+  font-size: 0.75rem;
+}
+
+.success-notification {
+  background-color: var(--blue);
+  border-radius: 50rem 0 0 50rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  position: fixed;
+  top: 1rem;
+  right: -110%;
+  width: 18rem;
+}
+
+.active-success-notification {
+  right: 0;
+  transition: 0.7s ease-out;
+}
+
+.success-notification .far {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.success-notification h5 {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.success-notification p {
+  font-size: 0.875rem;
+}
+
+@media only screen and (min-width: 768px) {
+  #coming-soon {
+    width: 626px;
+  }
+
+  .logo img {
+    all: unset;
+  }
+
+  .header-text .coming-soon-heading {
+    font-size: 3rem;
+  }
+
+  .header-text .coming-soon-content {
+    font-size: 1.25rem;
+  }
+
+  form[name="newletter"] {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .email-group {
+    flex-basis: 69%;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .action-buttons input[type="email"] {
+    flex-basis: 100%;
+  }
+
+  .action-buttons .validation-text {
+    margin-left: 6%;
+  }
+
+  .action-buttons button[type="submit"] {
+    margin-top: 0;
+    flex-basis: 29%;
+  }
+}

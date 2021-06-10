@@ -1,0 +1,271 @@
+:root {
+  /* Primary Colors */
+  --desaturated-red: hsl(0, 36%, 70%);
+  --soft-red: hsl(0, 93%, 68%);
+  /* Neutral Colors */
+  --dark-grayish-red: hsl(0, 6%, 24%);
+  /* Gradients */
+  --background-gradient: linear-gradient(
+    135deg,
+    hsl(0, 0%, 100%),
+    hsl(0, 100%, 98%)
+  );
+  --button-gradient: linear-gradient(
+    135deg,
+    hsl(0, 80%, 86%),
+    hsl(0, 74%, 74%)
+  );
+  /* Font Utilities */
+  font-size: 62.5%;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.container {
+  background-image: var(--background-gradient);
+}
+
+#hero-section {
+  margin: 0 auto;
+  min-height: 100vh;
+  min-width: 32rem;
+  max-width: 46rem;
+  padding-bottom: 8rem;
+}
+
+.logo {
+  padding: 3rem 0 3rem 3rem;
+}
+
+.logo img {
+  width: 10rem;
+}
+
+.hero-img img:nth-child(1) {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.hero-img img:nth-child(2) {
+  display: none;
+}
+
+header {
+  color: var(--desaturated-red);
+  text-align: center;
+  padding-top: 5.6rem;
+}
+
+header h1 {
+  color: var(--dark-grayish-red);
+  font-size: 4rem;
+  letter-spacing: 1rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+header h1 span {
+  color: var(--desaturated-red);
+  font-weight: 300;
+}
+
+header p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-bottom: 3.6rem;
+  padding: 0 3.6rem;
+}
+
+form {
+  padding: 0 3.2rem;
+}
+
+.email-group {
+  position: relative;
+}
+
+#input-email {
+  background-color: transparent;
+  border: 0.1rem solid var(--desaturated-red);
+  border-radius: 3rem;
+  padding: 1.5rem 2.5rem;
+  width: 100%;
+}
+
+#input-email:focus {
+  outline: none;
+  box-shadow: inset 0 0 0.8rem hsla(0, 36%, 70%, 0.26);
+}
+
+#input-email::placeholder {
+  color: var(--desaturated-red);
+  opacity: 0.56;
+}
+
+.email-group button[type="submit"] {
+  background-image: var(--button-gradient);
+  border: 0.1rem solid var(--desaturated-red);
+  border-radius: 3rem;
+  box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+  height: 4.7rem;
+  padding: 0 2.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.email-group button[type="submit"]:hover {
+  background-image: linear-gradient(
+    135deg,
+    hsla(0, 80%, 86%, 50%),
+    hsla(0, 74%, 74%, 50%)
+    );
+    border-color: hsl(0, 80%, 86%);
+    box-shadow: 0.2rem 0.8rem 1.5rem hsl(0, 80%, 86%);
+}
+
+#errorIcon {
+  content: url("../images/icon-error.svg");
+  display: none;
+  position: absolute;
+  right: 95%;
+  top: 49%;
+  transform: translate(-50%, -42%);
+}
+
+.email-validation-error {
+  color: var(--soft-red);
+  font-size: 1.4rem;
+  position: absolute;
+  left: 2.5rem;
+  bottom: -3.6rem;
+}
+
+.email-group p {
+  display: none;
+}
+
+@media only screen and (min-width: 992px) {
+  #hero-section {
+    all: unset;
+    background: url("../images/bg-pattern-desktop.svg") top left no-repeat;
+    background-size: 60% 100%;
+    display: grid;
+    grid-template-columns: 58% 42%;
+    grid-template-rows: 15rem auto 19rem;
+    grid-template-areas: "logo hero-img" "header hero-img" "form hero-img";
+    max-height: 100vh;
+  }
+
+  .logo {
+    all: unset;
+    grid-area: logo;
+    margin: 7rem 0 0 11rem;
+    max-height: 10vh;
+  }
+
+  .logo img {
+    all: unset;
+  }
+
+  .hero-img {
+    grid-area: hero-img;
+    max-height: 100vh;
+  }
+
+  .hero-img img:nth-child(1) {
+    display: none;
+  }
+
+  .hero-img img:nth-child(2) {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+  }
+
+  header {
+    grid-area: header;
+    max-height: 40vh;
+    max-width: 38rem;
+    margin-left: 11rem;
+    margin-top: 2.6rem;
+    padding: unset;
+    text-align: left;
+  }
+
+  header h1 {
+    font-size: 4.8rem;
+  }
+
+  header p {
+    padding: unset;
+  }
+
+  form {
+    grid-area: form;
+    margin-top: 2.6rem;
+    margin-left: 11rem;
+    max-height: 3.8rem;
+    max-width: 38rem;
+    padding: unset;
+  }
+
+  .email-group button[type="submit"] {
+    padding: 0 3.6rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .logo {
+    margin-left: 15rem;
+  }
+  
+  header {
+    margin-left: 15rem;
+    margin-top: 3.6rem;
+    max-width: 43rem;
+  }
+
+  header h1 {
+    font-size: 6.4rem;
+  }
+
+  header p {
+    font-size: 1.6rem;
+  }
+
+  form {
+    margin-top: 4.6rem;
+    margin-left: 15rem;
+    max-width: 43rem;
+  }
+}
+
+@media only screen and (min-width: 1792px) {
+  #hero-section {
+    grid-template-rows: 15rem auto 50rem;
+  }
+
+  header {
+    margin-top: 10rem;
+  }
+
+  form {
+    margin-top: 0rem;
+  }
+}
