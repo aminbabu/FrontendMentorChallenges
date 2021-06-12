@@ -32,8 +32,8 @@ Users would be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/aminbabu/components/tree/master/single-price-component)
-- Live Site URL: [Live site URL here](https://aminbabu.github.io/components/single-price-component/)
+- Solution URL: [GitHub Repo.](https://github.com/aminbabu/FrontendMentorChallenges/tree/master/components/single-price-component)
+- Live Site URL: [GitHub Page](https://aminbabu.github.io/FrontendMentorChallenges/components/single-price-component)
 
 ## My process
 

@@ -27,8 +27,8 @@ Users would be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/aminbabu/components/tree/master/testimonials-grid-section)
-- Live Site URL: [GitHub Page](https://testimonials.vercel.app/)
+- Solution URL: [GitHub Repo.](https://github.com/aminbabu/FrontendMentorChallenges/tree/master/components/testimonials-grid-section)
+- Live Site URL: [GitHub Page](https://aminbabu.github.io/FrontendMentorChallenges/components/testimonials-grid-section)
 
 ## My process
 

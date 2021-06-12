@@ -30,8 +30,8 @@ Users will be able to:
 
 ### Links
 
-- Solution URL: [GitHub repo.](https://github.com/aminbabu/components/tree/master/stats-preview-card-component)
-- Live Site URL: [Live site URL here](https://aminbabu.github.io/components/stats-preview-card-component/)
+- Solution URL: [GitHub Repo.](https://github.com/aminbabu/FrontendMentorChallenges/tree/master/components/stats-preview-card-component)
+- Live Site URL: [GitHub Page](https://aminbabu.github.io/FrontendMentorChallenges/components/stats-preview-card-component)
 
 ## My process
 

@@ -28,8 +28,8 @@ Users would be able to:
 
 ### Links
 
-- Solution URL: [Solution URL here](https://github.com/aminbabu/components/tree/master/four-card-feature-section)
-- Live Site URL: [Live site URL here](https://aminbabu.github.io/components/four-card-feature-section)
+- Solution URL: [GitHub Repo.](https://github.com/aminbabu/FrontendMentorChallenges/tree/master/components/four-card-feature-section)
+- Live Site URL: [GitHub Page](https://aminbabu.github.io/FrontendMentorChallenges/components/four-card-feature-section)
 
 ## My process
 

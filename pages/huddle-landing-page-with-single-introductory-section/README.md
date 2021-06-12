@@ -1,6 +1,6 @@
 # Frontend Mentor - Huddle landing page with single introductory section solution
 
-This is a solution to the [Huddle landing page with single introductory section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Huddle landing page with single introductory section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -28,8 +28,8 @@ Users would be able to:
 
 ### Links
 
-- Solution URL: [Solution URL here](https://github.com/aminbabu/components/tree/master/huddle-landing-page-with-single-introductory-section)
-- Live Site URL: [Live site URL here](https://aminbabu.github.io/components/huddle-landing-page-with-single-introductory-section)
+- Solution URL: [GitHub Repo.](https://github.com/aminbabu/FrontendMentorChallenges/tree/master/pages/huddle-landing-page-with-single-introductory-section)
+- Live Site URL: [GitHub Page](https://aminbabu.github.io/FrontendMentorChallenges/pages/huddle-landing-page-with-single-introductory-section/)
 
 ## My process
 
@@ -39,7 +39,6 @@ Users would be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
-
 
 ## Author
 

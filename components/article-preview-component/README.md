@@ -27,8 +27,8 @@ Users would be able to:
 
 ### Links
 
-- Solution URL: [GitHub Repo. URL here](https://github.com/aminbabu/components/tree/master/article-preview-component)
-- Live Site URL: [GitHub Pages](https://aminbabu.github.io/components/article-preview-component)
+- Solution URL: [GitHub Repo.](https://github.com/aminbabu/FrontendMentorChallenges/tree/master/components/article-preview-component)
+- Live Site URL: [GitHub Page](https://aminbabu.github.io/FrontendMentorChallenges/components/article-preview-component)
 
 ## My process
 

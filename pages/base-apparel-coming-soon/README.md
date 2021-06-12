@@ -31,8 +31,8 @@ Users would be able to:
 
 ### Links
 
-- Solution URL: [Solution URL here](https://github.com/aminbabu/components/tree/master/base-apparel-coming-soon)
-- Live Site URL: [Live site URL here](https://aminbabu.github.io/components/base-apparel-coming-soon/)
+- Solution URL: [Solution URL here](https://github.com/aminbabu/FrontendMentorChallenges/tree/master/pages/base-apparel-coming-soon)
+- Live Site URL: [Live site URL here](https://aminbabu.github.io/FrontendMentorChallenges/pages/base-apparel-coming-soon)
 
 ## My process
 

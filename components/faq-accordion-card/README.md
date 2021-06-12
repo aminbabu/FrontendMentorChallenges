@@ -29,8 +29,8 @@ Users would be able to:
 
 ### Links
 
-- Solution URL: [GitHub Repo.](https://github.com/aminbabu/components/tree/master/faq-accordion-card)
-- Live Site URL: [GitHub Pages](https://aminbabu.github.io/components/faq-accordion-card)
+- Solution URL: [GitHub Repo.](https://github.com/aminbabu/FrontendMentorChallenges/tree/master/components/faq-accordion-card)
+- Live Site URL: [GitHub Page](https://aminbabu.github.io/FrontendMentorChallenges/components/faq-accordion-card)
 
 ## My process
 

@@ -31,8 +31,8 @@ Users would be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/aminbabu/components/tree/master/fylo-data-storage-component
-- Live Site URL: [Live site URL here](https://data-storage-component-ashen.vercel.app/)
+- Solution URL: [GitHub Repo.](https://github.com/aminbabu/FrontendMentorChallenges/tree/master/components/fylo-data-storage-component)
+- Live Site URL: [GitHub Page](https://aminbabu.github.io/FrontendMentorChallenges/components/fylo-data-storage-component)
 
 ## My process
 

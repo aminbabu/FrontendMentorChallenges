@@ -1,6 +1,6 @@
 # Frontend Mentor - Fylo landing page with two column layout solution
 
-This is a solution to the [Fylo landing page with two column layout challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-landing-page-with-two-column-layout-5ca5ef041e82137ec91a50f5). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Fylo landing page with two column layout challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-landing-page-with-two-column-layout-5ca5ef041e82137ec91a50f5). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -28,8 +28,8 @@ Users would be able to:
 
 ### Links
 
-- Solution URL: [GihHub Repo.](https://github.com/aminbabu/components/tree/master/fylo-landing-page-with-two-column-layout)
-- Live Site URL: [GitHub Page](https://aminbabu.github.io/components/fylo-landing-page-with-two-column-layout)
+- Solution URL: [GihHub Repo.](https://github.com/aminbabu/FrontendMentorChallenges/tree/master/pages/fylo-landing-page-with-two-column-layout)
+- Live Site URL: [GitHub Page](https://aminbabu.github.io/FrontendMentorChallenges/pages/fylo-landing-page-with-two-column-layout)
 
 ## My process
 

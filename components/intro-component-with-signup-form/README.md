@@ -32,8 +32,8 @@ Users would be able to:
 
 ### Links
 
-- Solution URL: [GitHub Repo.](https://github.com/aminbabu/components/tree/master/intro-component-with-signup-form)
-- Live Site URL: [GitHub Pages](https://aminbabu.github.io/components/intro-component-with-signup-form)
+- Solution URL: [GitHub Repo.](https://github.com/aminbabu/FrontendMentorChallenges/tree/master/components/intro-component-with-signup-form)
+- Live Site URL: [GitHub Page](https://aminbabu.github.io/FrontendMentorChallenges/components/intro-component-with-signup-form)
 
 ## My process
 

@@ -32,8 +32,8 @@ Users will be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-3-column-card-component-Ik1wTU7TK)
-- Live Site URL: [Live site URL here](https://aminbabu.github.io/components/3-column-preview-card-component-main/)
+- Solution URL: [GitHub Repo.](https://github.com/aminbabu/FrontendMentorChallenges/tree/master/components/3-column-preview-card-component-main)
+- Live Site URL: [GitHub Page](https://aminbabu.github.io/FrontendMentorChallenges/components/3-column-preview-card-component-main)
 
 ## My process
 
