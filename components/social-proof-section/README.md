@@ -1,6 +1,6 @@
 # Frontend Mentor - Social proof section solution
 
-This is a solution to the [Social proof section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Social proof section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -11,6 +11,7 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
+
 ## Overview
 
 ### The challenge
@@ -21,8 +22,8 @@ Users would be able to:
 
 ### Screenshot
 
-![Desktop Preview](./design/desktop.jpg)
-![Mobile Preview](./design/mobile.jpg)
+![Desktop Preview](./design/desktop.png)
+![Mobile Preview](./design/mobile.png)
 
 ### Links
 
@@ -42,4 +43,4 @@ Users would be able to:
 
 - Website - [AminBabu](#)
 - Frontend Mentor - [@aminbabu](https://www.frontendmentor.io/profile/aminbabu)
-- Twitter - [@AminBabu_](https://www.twitter.com/AminBabu_)
+- Twitter - [@AminBabu\_](https://www.twitter.com/AminBabu_)

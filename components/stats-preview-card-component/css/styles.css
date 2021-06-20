@@ -9,12 +9,13 @@ html {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: hsl(233, 47%, 7%);
   font-size: 1.4rem;
 }
 
-h1, h2 {
+h1,
+h2 {
   color: hsl(0, 0%, 100%);
 }
 
@@ -25,7 +26,7 @@ h1 {
 
 h5 {
   color: hsla(0, 0%, 100%, 0.6);
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   font-weight: 400;
   letter-spacing: 0.1rem;
   margin: 0.6rem 0 0;
@@ -50,7 +51,7 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
-  height: 40vh;
+  height: 250px;
   width: 100%;
   border-radius: 1rem 1rem 0 0;
 }
@@ -60,8 +61,7 @@ p {
   text-align: center;
 }
 
-
-.content h1>span {
+.content h1 > span {
   color: hsl(277, 64%, 61%);
 }
 
@@ -69,11 +69,11 @@ p {
   margin-top: 2.6rem;
 }
 
-.stat>h3 {
-  font-family: 'Lexend Deca', sans-serif;
+.stat > h3 {
+  font-family: "Lexend Deca", sans-serif;
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 600px) {
   body {
     display: grid;
     height: 100vh;
