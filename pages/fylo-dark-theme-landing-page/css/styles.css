@@ -336,6 +336,7 @@ section#contact {
   border-radius: 3.6rem;
   padding: 1.8rem 2.6rem;
   outline: none;
+  width: 100%;
 }
 
 .contact-card .form-group input[type="email"]::placeholder {
@@ -344,9 +345,11 @@ section#contact {
 
 .contact-card .error-alert {
   color: var(--error);
-  font-size: 1.2rem;
-  margin-top: -1rem;
   display: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: left;
+  margin-left: 2.6rem;
 }
 
 .contact-card .active-error-alert {
@@ -457,6 +460,12 @@ footer .social-links .fab:hover {
     max-width: 32rem;
   }
   /* Service Style End */
+
+  /* Footer Style Start */
+  footer .footer-content .left-content .left-content-1-text {
+    padding-right: 7rem;
+  }
+  /* Footer Style End */
 }
 
 @media only screen and (min-width: 576px) {
@@ -555,10 +564,11 @@ footer .social-links .fab:hover {
 
   .contact-card .form-group {
     flex-direction: row;
+    align-items: flex-start;
     justify-content: space-between;
   }
 
-  .contact-card .form-group input[type="email"] {
+  .contact-card .form-group .input-group {
     flex-basis: 66%;
   }
 
@@ -575,10 +585,6 @@ footer .social-links .fab:hover {
   footer .footer-content .footer-nav {
     display: flex;
     justify-content: space-around;
-  }
-
-  footer .footer-content .left-content-1-text {
-    padding-right: 14rem;
   }
   /* Footer Wrapper End */
 }
