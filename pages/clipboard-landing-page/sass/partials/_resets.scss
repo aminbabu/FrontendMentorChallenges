@@ -1,0 +1,36 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $heading;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: $text;
+  font-size: $mobileFontSize;
+  line-height: 1.5;
+}
+
+@mixin make-container($padding-x, $max-width) {
+  width: $max-width;
+  padding-left: $padding-x;
+  padding-right: $padding-x;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper {
+  @include make-container(2.125rem, 100%);
+}

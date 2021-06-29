@@ -1,0 +1,21 @@
+// Button design
+@mixin btn($bg-color, $hover-bg-color, $border-color, $shadow-color) {
+  background-color: $bg-color;
+  border-radius: 2rem;
+  border-bottom: 0.1875rem solid $border-color;
+  box-shadow: 0 0.365rem 1rem 0 $shadow-color;
+  color: $white;
+  font-size: $generalFontSize;
+  font-weight: 600;
+  letter-spacing: 0.0625rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  padding: 0.875rem 2rem;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $hover-bg-color;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+}

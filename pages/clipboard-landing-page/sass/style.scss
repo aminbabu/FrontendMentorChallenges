@@ -1,0 +1,421 @@
+@import "./partials/variables";
+@import "./partials/utils";
+@import "./partials/resets";
+
+body {
+  font-family: $fontFamily;
+  font-size: $generalFontSize;
+}
+
+// Buttons Style Start
+.btn-group {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 2rem auto 0;
+  max-width: 19.5rem;
+}
+
+.btn-primary {
+  @include btn(
+    $primary,
+    $activePrimaryState,
+    $btnPrimaryBorder,
+    $btnPrimaryShadow
+  );
+}
+
+.btn-secondary {
+  @include btn(
+    $secondary,
+    $activeSecondaryState,
+    $btnSecondaryBorder,
+    $btnSecondaryShadow
+  );
+}
+// Buttons Style End
+
+// Heading Style Start
+.primary-heading {
+  font-size: 1.9375rem;
+}
+
+.secondary-heading {
+  font-size: 1.75rem;
+}
+
+.general-heading {
+  font-size: 1.5rem;
+}
+// Heading Style End
+
+// Header Section Style Start
+.header {
+  background: url(../images/bg-header-mobile.png) no-repeat top center;
+  background-size: cover;
+  padding-top: 8rem;
+  text-align: center;
+}
+
+.header-logo {
+  padding-bottom: 3.5rem;
+}
+// Header Section Style End
+
+// Keep-track Section Style Start
+.keep-track {
+  padding-top: 8rem;
+}
+
+.keep-track-content-1 {
+  text-align: center;
+}
+
+.keep-track-image {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding-left: 2.125rem;
+  padding-right: 2.125rem;
+
+  img {
+    width: 100%;
+  }
+}
+
+.keep-track-elements {
+  .keep-track-element {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    max-width: 310px;
+  }
+}
+// Keep-track Section Style End
+
+// Access Section Style Start
+.access {
+  padding-top: 8rem;
+}
+
+.access-content-1 {
+  text-align: center;
+}
+
+.access-image {
+  margin-top: 4rem;
+
+  img {
+    width: 100%;
+  }
+}
+// Access Section Style End
+
+// Workflow Section Style Start
+.workflow {
+  padding-top: 8rem;
+  text-align: center;
+}
+
+.workflow-content-1 {
+  text-align: center;
+}
+
+.workflow-content-2 {
+  margin-top: 4rem;
+}
+
+.workflow-elements {
+  .workflow-element {
+    margin: 0 auto 3rem;
+    max-width: 310px;
+  }
+}
+// Access Section Style End
+
+// Testimonial Section Style Start
+.testimonial {
+  padding-top: 8rem;
+  text-align: center;
+}
+
+.testimonial-logo {
+  margin-bottom: 3rem;
+}
+// Testimonial Section Style End
+
+// Download Section Style Start
+.download {
+  padding-top: 8rem;
+  text-align: center;
+}
+// Download Section Style End
+
+// Footer Section Style Start
+.footer {
+  background-color: $footerBackground;
+  margin-top: 8rem;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.footer-logo {
+  width: 3.5rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  img {
+    width: 100%;
+  }
+}
+
+.footer-nav {
+  margin-top: 3rem;
+
+  .footer-links {
+    list-style-type: none;
+  }
+
+  li {
+    padding-bottom: 1.5rem;
+
+    a {
+      color: $heading;
+      font-weight: 600;
+      text-decoration: none;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}
+
+.social-links {
+  margin-top: 1.5rem;
+
+  .fab {
+    color: $heading;
+    font-size: 1.75rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    &:hover {
+      color: $primary;
+      transition: 0.3s ease;
+    }
+  }
+}
+// Footer Section Style End
+
+// Media Queries Start
+@media only screen and (min-width: 576px) {
+  // Buttons Style Start
+  .btn-group {
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: unset;
+  }
+  // Buttons Style End
+
+  .wrapper {
+    @include make-container(0, 540px);
+  }
+
+  .content-md {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 33.25rem;
+  }
+
+  p {
+    font-size: $generalFontSize;
+  }
+
+  // Keep-track Section Style Start
+  .keep-track-image {
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 32rem;
+    }
+  }
+  // Keep-track Section Style End
+
+  // Workflow Section Style Start
+  .workflow-content-2 {
+    text-align: center;
+  }
+  // Workflow Section Style End
+}
+
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    @include make-container(0, 720px);
+  }
+
+  .content-md {
+    max-width: 43rem;
+  }
+
+  // Heading Style Start
+  .primary-heading {
+    font-size: 2.75rem;
+  }
+
+  .secondary-heading {
+    font-size: 2.25rem;
+  }
+  // Heading Style End
+
+  // Header Style Start
+  .header {
+    background: url(../images/bg-header-desktop.png) no-repeat top center;
+  }
+  // Header Style End
+
+  // Keep-track Style Start
+  .keep-track-content-2 {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .keep-track-image {
+    all: unset;
+    flex-basis: 50%;
+
+    img {
+      all: unset;
+      width: 100%;
+      margin-left: -3rem;
+    }
+  }
+
+  .keep-track-elements {
+    flex-basis: 50%;
+
+    .keep-track-element {
+      text-align: left;
+      margin-left: 0;
+      max-width: 376px;
+    }
+  }
+  // Keep-track Style End
+
+  // Workflow Style Start
+  .workflow-elements {
+    .workflow-element {
+      max-width: 376px;
+      margin-top: 5rem;
+    }
+  }
+  // Workflow Style End
+
+  // Testimonial Style Start
+  .testimonial {
+    .testimonial-logo {
+      margin-bottom: 5rem;
+    }
+  }
+  // Testimonial Style End
+}
+
+@media only screen and (min-width: 992px) {
+  .wrapper {
+    @include make-container(0, 960px);
+  }
+
+  // Keep-track Style Start
+  .keep-track-elements {
+    .keep-track-element {
+      padding-left: 5rem;
+      max-width: 456px;
+    }
+  }
+  // Keep-track Style End
+
+  // Access Style Start
+  .access-content-2 {
+    .access-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 960px;
+    }
+  }
+  // Access Style End
+
+  // Workflow Style Start
+  .workflow-elements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+
+    .workflow-element {
+      margin: 0;
+    }
+  }
+  // Workflow Style End
+
+  // Testimonial Style Start
+  .testimonial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+  // Testimonial Style End
+
+  // Footer Style Start
+  .footer {
+    text-align: left;
+
+    .wrapper {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    .footer-logo {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .footer-nav {
+      flex-basis: 70%;
+      display: flex;
+      justify-content: flex-start;
+      gap: 10rem;
+      margin-top: 0;
+      margin-left: 5rem;
+    }
+
+    .social-links {
+      margin-top: 0;
+    }
+  }
+  // Footer Style End
+}
+
+@media only screen and (min-width: 1200px) {
+  .wrapper {
+    @include make-container(0, 1140px);
+  }
+
+  // Testimonial Style Start
+  .testimonial {
+    gap: 5rem;
+  }
+  // Testimonial Style End
+}
+
+@media only screen and (min-width: 1440px) {
+  .wrapper {
+    @include make-container(0, 1320px);
+  }
+}
+
+// Media Queries End
