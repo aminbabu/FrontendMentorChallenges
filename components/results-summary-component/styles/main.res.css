@@ -50,8 +50,8 @@
 
   /* result card */
   .result-card {
-    max-width: 712px;
-    min-width: 680px;
+    max-width: 680px;
+    min-width: 660px;
   }
 
   .result-card .card-body {
