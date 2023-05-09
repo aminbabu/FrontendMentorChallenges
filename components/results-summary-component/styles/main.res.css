@@ -38,7 +38,22 @@
 }
 
 @media screen and (min-width: 768px) {
+  /* common styles */
+  body {
+    font-size: 1.125rem;
+  }
+
+  /* card */
+  .card-title {
+    font-size: 1.25rem;
+  }
+
   /* result card */
+  .result-card {
+    max-width: 712px;
+    min-width: 680px;
+  }
+
   .result-card .card-body {
     display: flex;
   }
