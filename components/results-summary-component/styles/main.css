@@ -1,0 +1,254 @@
+/* document root */
+:root {
+  /* Primary */
+  --light-red: hsl(0, 100%, 67%);
+  --orangey-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+
+  /* Gradients */
+  --light-slate-blue: hsl(252, 100%, 67%); /* background */
+  --light-royal-blue: hsl(241, 81%, 54%); /* background */
+
+  --violet-blue: hsla(256, 72%, 46%, 1); /* circle */
+  --persian-blue: hsla(241, 72%, 46%, 0); /* circle */
+
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+/* common stules */
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list-reboot {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.rounded-full {
+  border-radius: 50rem !important;
+}
+
+/* buttons */
+.btn {
+  appearance: none;
+  text-decoration: none;
+  color: gray;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 2rem;
+  font-size: 100%;
+}
+
+.btn:hover,
+.btn:active {
+  color: gray;
+  opacity: 0.75;
+}
+
+.btn-primary {
+  background-color: var(--dark-gray-blue);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background-color: var(--light-royal-blue);
+  background-image: linear-gradient(
+    to bottom,
+    var(--light-slate-blue),
+    var(--light-royal-blue)
+  );
+  color: var(--white);
+}
+
+/* card */
+.card {
+  background-color: var(--white);
+  font-size: 1.125rem;
+  font-weight: 500;
+  border-radius: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+/* reslut section */
+.reslut-section {
+  min-height: 100vh;
+}
+
+/* result card */
+.result-card {
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: box-shadow 300ms;
+}
+
+/* result overview */
+.result-overview {
+  background-color: var(--light-royal-blue);
+  background-image: linear-gradient(
+    to bottom,
+    var(--light-slate-blue),
+    var(--light-royal-blue)
+  );
+  color: var(--light-lavender);
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 0 0 1.5rem 1.5rem;
+}
+
+.result-overview .card-text {
+  max-width: 320px;
+}
+
+.result-overview .card-title {
+  margin-bottom: 1.5rem;
+}
+
+.result-score {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: linear-gradient(
+    to bottom,
+    var(--violet-blue) 0%,
+    var(--persian-blue) 100%
+  );
+  line-height: 1.25;
+}
+
+.result-score .result-mark {
+  font-size: 3.25rem;
+  font-weight: 800;
+  color: var(--white);
+}
+
+.result-appreciation {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: var(--white);
+}
+
+/* result summary */
+.result-summary {
+  padding: 2rem;
+}
+
+.result-summary .card-title {
+  margin-bottom: 1.25rem;
+}
+
+.result-overview-list {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.result-item {
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.25rem 0.75rem;
+}
+
+.result-item .result-verb {
+  margin-right: auto;
+}
+
+.result-item .icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.result-verb-overall-score {
+  color: var(--dark-gray-blue);
+}
+
+.result-verb-score {
+  font-weight: 700;
+}
+
+.result-red {
+  background-color: hsla(0, 100%, 67%, 0.07);
+}
+
+.result-red .icon * {
+  stroke: var(--light-red);
+}
+
+.result-red .result-verb {
+  color: var(--light-red);
+}
+
+.result-yellow {
+  background-color: hsla(39, 100%, 56%, 0.07);
+}
+
+.result-yellow .icon * {
+  stroke: var(--orangey-yellow);
+}
+
+.result-yellow .result-verb {
+  color: var(--orangey-yellow);
+}
+
+.result-teal {
+  background-color: hsla(166, 100%, 37%, 0.07);
+}
+
+.result-teal .icon * {
+  stroke: var(--green-teal);
+}
+
+.result-teal .result-verb {
+  color: var(--green-teal);
+}
+
+.result-blue {
+  background-color: hsla(234, 85%, 45%, 0.07);
+}
+
+.result-blue .icon * {
+  stroke: var(--cobalt-blue);
+}
+
+.result-blue .result-verb {
+  color: var(--cobalt-blue);
+}
